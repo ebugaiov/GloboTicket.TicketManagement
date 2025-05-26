@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1455B51D-0E75-4684-8BF2-08FCE3B1C17A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{65043145-E07D-4613-A6D8-96522B865F76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{419A63B4-CFB6-4AA6-916B-DDF294FCC087}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{463C3907-D0FA-411D-B2BE-D25FB459DA1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4E57A233-05FA-485B-B530-FB1E28B71C59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2071904D-4829-4E89-87A8-53E590BFEF6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Domain", "GloboTicket.TicketManagement.Domain\GloboTicket.TicketManagement.Domain.csproj", "{ABF83B59-F42E-4A3D-8315-050B37F4C237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{419A63B4-CFB6-4AA6-916B-DDF294FCC087} = {1455B51D-0E75-4684-8BF2-08FCE3B1C17A}
+		{463C3907-D0FA-411D-B2BE-D25FB459DA1D} = {1455B51D-0E75-4684-8BF2-08FCE3B1C17A}
+		{4E57A233-05FA-485B-B530-FB1E28B71C59} = {1455B51D-0E75-4684-8BF2-08FCE3B1C17A}
+		{2071904D-4829-4E89-87A8-53E590BFEF6E} = {1455B51D-0E75-4684-8BF2-08FCE3B1C17A}
+		{ABF83B59-F42E-4A3D-8315-050B37F4C237} = {4E57A233-05FA-485B-B530-FB1E28B71C59}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABF83B59-F42E-4A3D-8315-050B37F4C237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF83B59-F42E-4A3D-8315-050B37F4C237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF83B59-F42E-4A3D-8315-050B37F4C237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF83B59-F42E-4A3D-8315-050B37F4C237}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
