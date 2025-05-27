@@ -10,10 +10,8 @@ public static class InfrastructureServiceRegistration
 {
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
-        // Register EmailSettings from configuration
         services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
-
-        // Register EmailService as IEmailService
+        
         services.AddTransient<IEmailService, EmailService>();
 
         return services;

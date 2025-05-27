@@ -10,9 +10,9 @@ public class EmailService : IEmailService
 {
     public EmailSettings _emailSettings { get; }
 
-    public EmailService(EmailSettings emailSettings)
+    public EmailService(IOptions<EmailSettings> mailSettings)
     {
-        _emailSettings = emailSettings;
+        _emailSettings = mailSettings.Value;
     }
     
     public async Task<bool> SendEmail(Email email)
