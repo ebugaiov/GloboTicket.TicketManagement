@@ -6,6 +6,7 @@ using GloboTicket.TicketManagement.Application.Features.Events.Commands.DeleteEv
 using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventList;
 using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail;
 using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventExport;
+using GloboTicket.TicketManagement.Api.Utility;
 
 namespace GloboTicket.TicketManagement.Api.Controllers;
 
@@ -66,6 +67,7 @@ public class EventsController : Controller
     }
 
     [HttpGet("export", Name = "ExportEvents")]
+    [FileResultContentType("text/csv")]
     public async Task<FileResult> ExportEvents()
     {
         var fileDto = await _mediator.Send(new GetEventExportQuery());

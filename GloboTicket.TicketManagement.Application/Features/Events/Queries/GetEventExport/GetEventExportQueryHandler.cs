@@ -21,7 +21,7 @@ public class GetEventExportQueryHandler : IRequestHandler<GetEventExportQuery, E
 
     public async Task<EventExportFileVm> Handle(GetEventExportQuery request, CancellationToken cancellationToken)
     {
-        var allEvents = _mapper.Map<List<EventExportDto>>((await _eventRepository.ListAllAsync()));
+        var allEvents = _mapper.Map<List<EventExportDto>>((await _eventRepository.ListAllAsync()).OrderBy(x => x.Date));
         
         var fileData = _csvExporter.ExportEventsToCsv(allEvents);
         
