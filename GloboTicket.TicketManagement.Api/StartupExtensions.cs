@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using GloboTicket.TicketManagement.Persistence;
 using GloboTicket.TicketManagement.Application;
 using GloboTicket.TicketManagement.Infrastructure;
+using GloboTicket.TicketManagement.Api.Middleware;
 
 namespace GloboTicket.TicketManagement.Api;
 
@@ -42,6 +43,8 @@ public static class StartupExtensions
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+        
+        app.UseCustomExceptionHandler();
         
         app.UseHttpsRedirection();
         app.MapControllers();
